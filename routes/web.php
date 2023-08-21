@@ -19,4 +19,5 @@ Route::get('/', function () {
 });
 Route::controller(UserController::class)->group(function (){
     Route::get('/datatable', 'index')->name('data.table');
+    Route::get('/datatable/net', 'DataTableNet')->name('data.table.net');
 });
